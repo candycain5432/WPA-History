@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #1e1e2f, #14141f);
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #c0c0c0;
+            text-align: center;
+            max-width: 600px;
+            line-height: 1.6;
+        
+        }
+
+        ol {
+            color: #c0c0c0 ;
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 1rem;
+            margin-top: 20px;
+            cursor: pointer;
+            color: #fff;
+            background-color: #4a90e2;
+            border: none;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #357abd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Wake Prep Website</h1>
+    <p>This page is for the people of wake prep to go through. there is a lot of items on this page here is a list (you have to press the number button for them after you press the button that says WPA Page) However if you would like to join a cause for the greater good press the fight back button.
+    </p>
+
+    <ol>
+        <li>Wake Prep Hall Of Fame</li>
+        <li>Countdown To The End Of Year</li>
+        <li>Wake Prep Hall Of Shame</li>
+        <li>Black Market</li>
+    </ol>
+
+    <button onclick="redirectToSecondPage()">WPA Page</button>
+
+    <button onclick="redirectToThirdPage()">Fight Back</button>
+
+    <script>
+        function redirectToSecondPage() {
+            window.location.href = "loader.html";
+        }
+    </script>
+
+<script>
+    function redirectToThirdPage() {
+        window.location.href = "loader2.html";
+    }
+</script>
+
+</body>
+</html>
